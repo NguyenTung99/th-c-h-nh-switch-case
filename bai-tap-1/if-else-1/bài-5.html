@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<input type="number" id="DiemKiemTra">
+<input type="number" id="ThiGiuaKi">
+<input type="number" id="ThiCuoiKi">
+<button type="button" onclick="TinhTong();">KiemTra</button>
+<script>
+    function TinhTong() {
+        let KiemTra = parseFloat(document.getElementById("DiemKiemTra").value);
+        let GiuaKi = parseFloat(document.getElementById("ThiGiuaKi").value);
+        let CuoiKi = parseFloat(document.getElementById("ThiCuoiKi").value);
+        let TrungBinh = (KiemTra + GiuaKi + CuoiKi) / 3;
+        if (TrungBinh < 3.5) {
+            alert('học-lực-kém');
+        } else if (TrungBinh >= 3.5 && TrungBinh < 5.0) {
+            alert('học-lực-yếu');
+        } else if (TrungBinh >= 5.0 && TrungBinh < 6.5) {
+            alert('học-lực-Trung bình');
+        } else if (TrungBinh >= 6.5 && TrungBinh < 8.0) {
+            alert('học-lực-khá');
+        } else {
+            alert('học sinh giỏi');
+        }
+    }
+</script>
+</body>
+</html>

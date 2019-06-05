@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a/b</title>
+</head>
+<body>
+<input type="number" id="so1">
+<input type="number" id="so2"><br>
+<button type="button" onclick="tinh();">KiemTra</button>
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById("so1").value);
+        let b = parseInt(document.getElementById("so2").value);
+        c = a % b;
+        if (c == 0) {
+            alert('ok');
+        } else {
+            alert('no');
+        }
+    }
+</script>
+</body>
+</html>

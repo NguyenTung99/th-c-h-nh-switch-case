@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<input type="number" id="SoNguyen">
+<button type="button" onclick="SoSanh();">KiemTra</button>
+<script>
+    function SoSanh() {
+        let so = parseInt(document.getElementById("SoNguyen").value);
+        if (so > 0) {
+            alert('số>0');
+        } else if (so < 0) {
+            alert('số<0');
+        } else {
+            alert('Không-kết-quả')
+        }
+    }
+</script>
+</body>
+</html>

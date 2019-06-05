@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 6</title>
+</head>
+<body>
+<input type="number" id="SoTien">
+<button type="button" onclick="TinhHoaHong();">KiemTra</button>
+<br>
+<text id='result'></text>
+<script>
+    function TinhHoaHong() {
+        let DoanhThu = parseFloat(document.getElementById("SoTien").value);
+        let HoaHong;
+        if (DoanhThu >= 10.0 && DoanhThu < 20.0) {
+            HoaHong = (DoanhThu / 100.0) * 10.0;
+        } else if (DoanhThu >= 20.0 && DoanhThu < 30.0) {
+            HoaHong = (DoanhThu / 100.0) * 15.0;
+        } else if (DoanhThu >= 30.0) {
+            HoaHong = (DoanhThu / 100.0) * 20.0;
+        } else {
+            HoaHong = 0.0;
+        }
+        document.getElementById('result').innerHTML = HoaHong;
+    }
+</script>
+</body>
+</html>
